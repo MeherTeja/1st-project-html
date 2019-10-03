@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.loader
+{
+
+  border: 36px solid #f3f3f3;
+  border-radius: 0%;
+  border-top: 16px  solid blue;
+  border-right: 16px  solid green;
+  border-bottom: 16px  solid red;
+  border-left: 16px solid pink;
+  width: 180px;
+  height: 180px;
+
+  animation: spin 1.5s linear infinite;
+}  -
+webkit-animation: spin 2s linear infinite;
+@-webkit-keyframes spin
+{
+  0% { -webkit-transform: rotate(0deg);
+}
+  100% { -webkit-transform: rotate(360deg);
+}
+}
+@keyframes spin {
+  10% { transform: rotate(10deg);
+}
+  100% { transform: rotate(360deg);
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<h2>How To Create A Loader</h2>
+<p><strong>Note:</strong> The -webkit- and -ms- prefixes are for browsers that do not support animation and transform properties.</p>
+
+<div class="loader"></div>
+
+</body>
+
+</html>
